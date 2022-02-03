@@ -55,7 +55,7 @@
         </div>
         <div class="container-fluid page">
             <h1 class="mt-4">Teachers</h1>
-            <form class='form' action="http://localhost:3005/addUser" class="teacher" enctype="application/x-www-form-urlencoded" method="POST">
+            <form class='form' action="/addUser" class="teacher" enctype="application/x-www-form-urlencoded" method="POST">
                 <select class="inputs" name="job" id="" class="teacher__select">
                     <%courses.map(e=>{%>
                         <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="container-fluid page">
                         <h1 class="mt-4">Students</h1>
-                        <form class='form' action="http://localhost:3005/addStudent" class="student" enctype="application/x-www-form-urlencoded" method="POST">
+                        <form class='form' action="/addStudent" class="student" enctype="application/x-www-form-urlencoded" method="POST">
                             <select class = 'inputs' name="course" id="" class="teacher__select">
                                 <%courses.map(e=>{%>
                                     <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
@@ -164,7 +164,7 @@
                                 </div>
                                 <div class="container-fluid page">
                                     <h1 class="mt-4">Groups</h1>
-                                    <form class='form' action="http://localhost:3005/addGroup" class="group" enctype="application/x-www-form-urlencoded" method="POST">
+                                    <form class='form' action="addGroup" class="group" enctype="application/x-www-form-urlencoded" method="POST">
                                         <select class="inputs" name="course" id="" class="teacher__select">
                                             <%courses.map(e=>{%>
                                                 <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
@@ -199,7 +199,7 @@
                                     </div>
                                     <div class="container-fluid page">
                                         <h1 class="mt-4">Courses</h1>
-                                        <form class='form' action="http://localhost:3005/addCourse" class="group" enctype="application/x-www-form-urlencoded" method="POST">
+                                        <form class='form' action="/addCourse" class="group" enctype="application/x-www-form-urlencoded" method="POST">
                                             <select class="inputs" name="duration" >
                                                 <option value="6">6 month</option>
                                                 <option value="9">9 month</option>

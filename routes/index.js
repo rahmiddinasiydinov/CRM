@@ -11,13 +11,15 @@ const checkUser = require('../controllers/loginAuth');
 const addUser = require('../controllers/addUser');
 const addStudent = require('../controllers/addStudent');
 const addGroup = require('../controllers/addGroup');
-const addCourse = require('../controllers/addCourse')
+const addCourse = require('../controllers/addCourse');
+const home = require('../controllers/home')
 //MIDDLEWARES
 const checkToken = require('../middlewares/Auth');
 const checkTokenTeacher = require('../middlewares/authTeacher');
 const checkTokenStudent = require('../middlewares/authStudent');
 /* GET home page. */
 router
+.get('/', home)
 .get('/admin',checkToken ,adminRoute)
 .get('/teacher',checkTokenTeacher ,teacherRoute)
 .get('/student',checkTokenStudent ,studentRoute)

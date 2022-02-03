@@ -1,5 +1,48 @@
 [
     {
+        "id": 1643850971487,
+        "name": "Salimov Baxodir",
+        "username": "baxa12",
+        "tel": "+998945673421",
+        "jobId": 1643836674726,
+        "password": "1234567",
+        "role": "teacher",
+        "groupId": 1643850928410
+    },
+    {
+        "id": 1643850770716,
+        "name": "Komil Allamjonov",
+        "username": "komil",
+        "tel": "+998945673421",
+        "courseId": 1643842421476,
+        "teacherId": 1643842536511,
+        "groupId": 1643842437024,
+        "password": "123456",
+        "role": "student"
+    },
+    {
+        "id": 1643850727409,
+        "name": "",
+        "username": "",
+        "tel": "",
+        "courseId": 1643849730078,
+        "teacherId": 1643849852864,
+        "groupId": 1643849758268,
+        "password": "",
+        "role": "student"
+    },
+    {
+        "id": 1643850725041,
+        "name": "AbduRohim ibn Baxrom",
+        "username": "AbduRohim",
+        "tel": "+998945673421",
+        "courseId": 1643849730078,
+        "teacherId": 1643849852864,
+        "groupId": 1643849758268,
+        "password": "3eCbMMkdddw",
+        "role": "student"
+    },
+    {
         "id": 1643849852864,
         "name": "Abdumalik Xaydarov",
         "username": "abdumalik001",
