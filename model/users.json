@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1643849852864,
+        "name": "Abdumalik Xaydarov",
+        "username": "abdumalik001",
+        "tel": "+998945673421",
+        "jobId": 1643849730078,
+        "password": "1234567",
+        "role": "teacher",
+        "groupId": 1643849758268
+    },
+    {
+        "id": 1643849804983,
+        "name": "Bekzod Shoyatbekov",
+        "username": "Bek",
+        "tel": "+998881628262",
+        "courseId": 1643849730078,
+        "teacherId": 1643849852864,
+        "groupId": 1643849758268,
+        "password": "bek_01",
+        "role": "student"
+    },
+    {
+        "id": 1643848709760,
+        "name": "Salohiddin Akbarov",
+        "username": "akbarov12",
+        "tel": "+998881628234",
+        "courseId": 1643842421476,
+        "teacherId": 1643842536511,
+        "groupId": 1643842437024,
+        "password": "akbarov123",
+        "role": "student"
+    },
+    {
+        "id": 1643842536511,
+        "name": "Baxtiyor aka",
+        "username": "baxtiyor_01",
+        "tel": "+998882346543",
+        "jobId": 1643842421476,
+        "password": "baxtiyor0234",
+        "role": "teacher",
+        "groupId": 1643842437024
+    },
+    {
+        "id": 1643842495027,
+        "name": "Zohidbek Kholikulov",
+        "username": "zohidbek123",
+        "tel": "+998945673421",
+        "courseId": 1643842421476,
+        "teacherId": 1643842536511,
+        "groupId": 1643842437024,
+        "password": "zohidbek0",
+        "role": "student"
+    },
+    {
+        "id": 1643842334978,
+        "name": "Ulug'bek Valiyev",
+        "username": "valiev",
+        "tel": "+998881628234",
+        "jobId": 1643836710521,
+        "password": "ulugbek1",
+        "role": "teacher",
+        "groupId": 1643836926183
+    },
+    {
+        "id": 1643842276221,
+        "name": "Rahmiddin Asiydnov",
+        "username": "rahmiddin12345",
+        "tel": "+998881628262",
+        "courseId": 1643836710521,
+        "teacherId": 1643842334978,
+        "groupId": 1643836926183,
+        "password": "webdev",
+        "role": "student"
+    },
+    {
+        "id": 1643841944582,
+        "name": "Abdukarim Mirzayev",
+        "username": "mirzayev12",
+        "tel": "+998945673421",
+        "jobId": 1643836727103,
+        "password": "abdukarim123",
+        "role": "teacher",
+        "groupId": 1643836879492
+    },
+    {
+        "id": 1643840090673,
+        "name": "Sobir Rahimov",
+        "username": "rahimov1",
+        "tel": "+998945673421",
+        "jobId": 1643836681856,
+        "password": "12345",
+        "role": "teacher",
+        "groupId": 1643836948395
+    },
+    {
+        "id": 1643839553903,
+        "name": "Sobir Karimov",
+        "username": "sobir",
+        "tel": "+998881628262",
+        "courseId": 1643836681856,
+        "teacherId": 1643840090673,
+        "groupId": 1643836948395,
+        "password": "12345",
+        "role": "student"
+    },
+    {
+        "id": 1643838826887,
+        "name": "Sardor Toriov",
+        "username": "serdar",
+        "tel": "+998881628234",
+        "courseId": 1643836697215,
+        "teacherId": 1643838785919,
+        "groupId": 1643836938019,
+        "password": "3eCbMMkdddw",
+        "role": "student"
+    },
+    {
+        "id": 1643838785919,
+        "name": "Davron Sohibov",
+        "username": "davron",
+        "tel": "+998881628262",
+        "jobId": 1643836697215,
+        "password": "sohibov",
+        "role": "teacher",
+        "groupId": 1643836938019
+    },
+    {
+        "id": 1643837950733,
+        "name": "Madina Ashurova",
+        "username": "madina",
+        "tel": "+998881628262",
+        "courseId": 1643836777945,
+        "teacherId": 1643837188399,
+        "groupId": 1643836907984,
+        "password": "madi22",
+        "role": "student"
+    },
+    {
+        "id": 1643837343068,
+        "name": "Samandar Shokirov",
+        "username": "saman12",
+        "tel": "+998881628262",
+        "courseId": 1643836746598,
+        "teacherId": 1643837101708,
+        "groupId": 1643837021390,
+        "password": "shokirov",
+        "role": "student"
+    },
+    {
+        "id": 1643837188399,
+        "name": "Aziza Qobilova",
+        "username": "aziza",
+        "tel": "+998881628456",
+        "jobId": 1643836777945,
+        "password": "azi01",
+        "role": "teacher",
+        "groupId": 1643836907984
+    },
+    {
+        "id": 1643837101708,
+        "name": "Asadov Komil",
+        "username": "kemal",
+        "tel": "+998881628262",
+        "jobId": 1643836746598,
+        "password": "kemal",
+        "role": "teacher",
+        "groupId": 1643837021390
+    },
+    {
+        "id": 1,
+        "name": "Rahmiddin Asiydinov",
+        "username": "rahmiddin",
+        "password": "asiydinov",
+        "tel": "+998881628262",
+        "role": "admin"
+    }
+]

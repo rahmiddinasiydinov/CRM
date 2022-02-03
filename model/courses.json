@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1643849730078,
+        "name": "Back End",
+        "duration": "12"
+    },
+    {
+        "id": 1643842421476,
+        "name": "Nodejs",
+        "duration": "9"
+    },
+    {
+        "id": 1643836777945,
+        "name": "C",
+        "duration": "12"
+    },
+    {
+        "id": 1643836746598,
+        "name": "Java",
+        "duration": "6"
+    },
+    {
+        "id": 1643836727103,
+        "name": "C#",
+        "duration": "12"
+    },
+    {
+        "id": 1643836710521,
+        "name": "FrontEnd",
+        "duration": "9"
+    },
+    {
+        "id": 1643836697215,
+        "name": "MySQL",
+        "duration": "6"
+    },
+    {
+        "id": 1643836681856,
+        "name": "Phyton",
+        "duration": "6"
+    },
+    {
+        "id": 1643836674726,
+        "name": "C++",
+        "duration": "6"
+    }
+]

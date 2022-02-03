@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CRM</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+</head>
+
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light"><%= admin.name %> <span class="role">(<%=admin.role%>)</span></div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='1'>Home</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='2'>Teachers</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='3'>Students</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='4'>Groups</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='5'>Courses</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='6'>Settings</a>
+        </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account Settings</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#!">Account</a>
+                                <a class="dropdown-item" id="logout" data-id="<%= admin.id %>">Log out</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#!">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid page">
+            <h1 class="mt-4">Welcome <%=admin.name%></h1>
+            <p style="margin-top: 50px;">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad laboriosam ipsa cumque facilis doloremque unde maxime? Ab eum, vel consequatur officiis tenetur eligendi dolorem odio ipsa voluptatum, perferendis iste praesentium nam sint hic, molestiae reprehenderit deleniti impedit. Quae pariatur molestiae doloremque fugiat quas. Asperiores deleniti sint earum culpa fugit veniam, similique ratione numquam rerum ipsa quia ex exercitationem accusantium nisi ad amet, corrupti totam voluptatibus et quas molestiae recusandae! Magnam unde eos impedit! Veniam obcaecati laudantium debitis iste autem ea labore recusandae. Esse atque laborum sit eaque ex adipisci explicabo expedita ullam neque nulla, cupiditate quod, odio sint temporibus unde omnis laboriosam autem. Eaque, ut mollitia. Nisi, eos ut incidunt molestias alias laudantium fugit nostrum? Consectetur ut vero dolores, fugit sed provident doloremque voluptatum eius delectus inventore praesentium excepturi incidunt voluptates error recusandae tenetur exercitationem quam officia numquam, officiis voluptatem illo consequatur quos? Autem, doloribus eligendi magnam a natus debitis libero harum nulla accusamus at dolorum ipsum repellat quae excepturi? Nihil recusandae aspernatur ducimus aut adipisci nesciunt veritatis aliquid amet est alias, perferendis ipsa nobis possimus iure facilis itaque minima exercitationem laborum temporibus! Maiores inventore similique praesentium saepe at rerum voluptates alias, mollitia necessitatibus rem cupiditate enim, temporibus nesciunt!</p>
+        </div>
+        <div class="container-fluid page">
+            <h1 class="mt-4">Teachers</h1>
+            <form class='form' action="http://localhost:3005/addUser" class="teacher" enctype="application/x-www-form-urlencoded" method="POST">
+                <select class="inputs" name="job" id="" class="teacher__select">
+                    <%courses.map(e=>{%>
+                        <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
+                        
+                        <%})%>
+                        
+                    </select>
+                    <select class="inputs" name="group" id="" class="teacher__select">
+                        <%groups.map(e=>{%>
+                            <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
+                            
+                            <%})%>
+                            
+                        </select>
+                        <input type="text" name="name"  class="inputs" placeholder="To'liq ism familya...">
+                        <input type="text" name="username" class="inputs" placeholder="Username...">
+                        <input type="text" name="tel"  class="inputs" placeholder="+998.... (probellarsiz)">
+                        <input type="text" name="password"  class="inputs" placeholder="Password...">
+                        <button class="button" type="submit">Add</button>
+                    </form>
+                    
+                    <h2 class="table-title">Information of Teachers</h2>
+                    <table class="table table-striped">
+                        
+                        <tr>
+                            <th>Id</th>
+                            <th>Full name</th>
+                            <th>Job</th>
+                            <th>Groups</th>
+                            <th>Tel number</th>
+                            <th>Username</th>
+                            <th>password</th>
+                        </tr>
+                        
+                        <tbody>
+                            <%teacher.map(e=>{%>
+                                <tr>
+                                    <td><%=e.id%></td>
+                                    <td><%=e.name%></td>
+                                    <td><%=e.course%></td>
+                                    <td><%=e.groups%></td>
+                                    <td><%=e.tel%></td>
+                                    <td><%=e.username%></td>
+                                    <td><%=e.password%></td>
+                                    
+                                </tr>
+                                <%})%>
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="container-fluid page">
+                        <h1 class="mt-4">Students</h1>
+                        <form class='form' action="http://localhost:3005/addStudent" class="student" enctype="application/x-www-form-urlencoded" method="POST">
+                            <select class = 'inputs' name="course" id="" class="teacher__select">
+                                <%courses.map(e=>{%>
+                                    <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
+                                    
+                                    <%})%>
+                                </select>
+                                <select class = 'inputs' name="group" id="" class="teacher__select">
+                                    <%groups.map(e=>{%>
+                                        <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
+                                        <%})%>
+                                    </select>
+                                    <input class = 'inputs' type="text" name="name" id="name" placeholder="To'liq ism familya...">
+                                    <input class = 'inputs' type="text" name="username" id="username" placeholder="Username...">
+                                    <input class = 'inputs' type="text" name="tel" id="tel" placeholder="+998.... (probellarsiz)">
+                                    <input class = 'inputs' type="text" name="password" id="tel" placeholder="Password...">
+                                    <button class="button" type="submit">Add</button>
+                                </form>
+                                
+                                <h2 class="table-title">Information of Students</h2>
+                                <table class="table table-striped">
+                                    
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Full name</th>
+                                        <th>Course name</th>
+                                        <th>Group name</th>
+                                        <th>Teacher's name</th>
+                                        <th>Tel number</th>
+                                        <th>Username</th>
+                                        <th>password</th>
+                                    </tr>
+                                    
+                                    <tbody>
+                                        <%student.map(e=>{%>
+                                            <tr>
+                                                <td><%=e.id%></td>
+                                                <td><%=e.name%></td>
+                                                <td><%=e.course%></td>
+                                                <td><%=e.group%></td>
+                                                <td><%=e.teacher%></td>
+                                                <td><%=e.tel%></td>
+                                                <td><%=e.username%></td>
+                                                <td><%=e.password%></td>
+                                                
+                                            </tr>
+                                            <%})%> 
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+                                </div>
+                                <div class="container-fluid page">
+                                    <h1 class="mt-4">Groups</h1>
+                                    <form class='form' action="http://localhost:3005/addGroup" class="group" enctype="application/x-www-form-urlencoded" method="POST">
+                                        <select class="inputs" name="course" id="" class="teacher__select">
+                                            <%courses.map(e=>{%>
+                                                <option value="<%=e.id%>" class="teacher__job"><%=e.name%></option>
+                                                <%})%>
+                                            </select>
+                                            <input class="inputs" type="text" name="name" id="group" placeholder="Group name...">
+                                            <button  class="button" type="submit">Add</button>
+                                        </form>
+                                        <h2 class="table-title">Information about Groups</h2>
+                                        <table class="table table-striped">
+                                            
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Group name</th>
+                                                <th>Technology</th>
+                                                
+                                            </tr>
+                                            
+                                            <tbody>
+                                                <%groups.map(e=>{%>
+                                                    <tr>
+                                                        <td><%=e.id%></td>
+                                                        <td><%=e.name%></td>
+                                                        <td><%=e.course%></td>
+                                                        
+                                                    </tr>
+                                                    <%})%> 
+                                                </tbody>
+                                            </table>
+                                            
+                                        
+                                    </div>
+                                    <div class="container-fluid page">
+                                        <h1 class="mt-4">Courses</h1>
+                                        <form class='form' action="http://localhost:3005/addCourse" class="group" enctype="application/x-www-form-urlencoded" method="POST">
+                                            <select class="inputs" name="duration" >
+                                                <option value="6">6 month</option>
+                                                <option value="9">9 month</option>
+                                                <option value="12">12 month</option>
+                                            </select>
+                                            <input class="inputs" type="text" name="name" id="group" placeholder="Course name...">
+                                            <button class="button" type="submit">Add</button>
+                                        </form>
+                                        <h2 class="table-title">Information about Courses</h2>
+                                        <table class="table table-striped">
+                                            
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Technology</th>
+                                                
+                                            </tr>
+                                            
+                                            <tbody>
+                                                <%courses.map(e=>{%>
+                                                    <tr>
+                                                        <td><%=e.id%></td>
+                                                        <td><%=e.name%></td>
+                                                        
+                                                    </tr>
+                                                    <%})%> 
+                                                </tbody>
+                                            </table>
+                                    </div>
+                                    <div class="container-fluid page">
+                                        <h1 class="mt-4">Settings</h1>
+                                        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                                        <p>
+                                            Make sure to keep all page content within the
+                                            <code>#page-content-wrapper</code>
+                                            . The top navbar is optional, and just for demonstration. Just create an element with the
+                                            <code>#sidebarToggle</code>
+                                            ID which will toggle the menu when clicked.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bootstrap core JS-->
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+                            <!-- Core theme JS-->
+                            <script src="js/scripts.js"></script>
+                            </html> 

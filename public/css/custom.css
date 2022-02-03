@@ -1,0 +1,47 @@
+.inactive{
+    display: none;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+.table-title{
+    margin-top: 100px;
+    text-align: center;
+
+}
+.form{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs{
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+}
+.button{
+    display: block;
+    border-radius: 8px;
+    position:absolute;
+    padding: 10px 30px;
+    bottom: -200%;
+    border:2ps solid, #000;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.page{
+    overflow: auto;
+}
+.role{
+    display: block;
+}
+.single-page-tables{
+    margin-top: 100px;
+}

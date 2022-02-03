@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CRM</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+    </head>
+   
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light"><%=teacher.name%> <span class="role">(<%=teacher.role%>)</span></div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='1'>Home</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='2'>My Group</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='3'>My students</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" id='4'>Settings</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account settings</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Account</a>
+                                        <a class="dropdown-item" id="logout" data-id="<%=teacher.id %>">Log out</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid page">
+                    <h1 class="mt-4">Welcome <%=teacher.name%></h1>
+                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                    <p>
+                        Make sure to keep all page content within the
+                        <code>#page-content-wrapper</code>
+                        . The top navbar is optional, and just for demonstration. Just create an element with the
+                        <code>#sidebarToggle</code>
+                        ID which will toggle the menu when clicked.
+                    </p>
+                </div>
+                <div class="container-fluid page">
+                    <h1 class="mt-4">My Group</h1>
+                    <table class="table table-striped single-page-tables">
+                                    
+                        <tr>
+                            <th>Group name</th>
+                            <th>Technology</th>
+                            <th>my Phone number</th>
+                            <th>Course duration(Month)</th>
+                        </tr>
+                        
+                        <tbody>
+                                <tr>
+                                    <td><%=teacher.group%></td>
+                                    <td><%=teacher.job%></td>
+                                    <td><%=teacher.tel%></td>
+                                    <td><%=teacher.duration%></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <div class="container-fluid page">
+                    <h1 class="mt-4">My students</h1>
+                    <table class="table table-striped single-page-tables">
+                                    
+                        <tr>
+                            <th>Student name</th>
+                            <th>Phone number</th>
+                        </tr>
+                        
+                        <tbody>
+                            <%teacher.students.map(e=>{%>
+                                <tr>
+                                    <td><%=e.name%></td>
+                                    <td><%=e.tel%></td>
+                                </tr>
+                                <%})%>
+                            </tbody>
+                        </table>
+                   
+                </div>
+            
+                <div class="container-fluid page">
+                    <h1 class="mt-4">Settings</h1>
+                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                    <p>
+                        Make sure to keep all page content within the
+                        <code>#page-content-wrapper</code>
+                        . The top navbar is optional, and just for demonstration. Just create an element with the
+                        <code>#sidebarToggle</code>
+                        ID which will toggle the menu when clicked.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    html> 
