@@ -45,6 +45,6 @@ menuBtn.forEach(e=>{
 })
 //logout
 logout.addEventListener('click', ()=>{
-    fetch('http://localhost:3005/logout')
-    window.location.replace('http://localhost:3005/login')
+    fetch('https://crm-exam.herokuapp.com/logout')
+    window.location.replace('https://crm-exam.herokuapp.com/login')
 })

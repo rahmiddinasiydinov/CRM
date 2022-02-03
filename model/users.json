@@ -1,5 +1,16 @@
 [
     {
+        "id": 1643852664088,
+        "name": "Asadbek Salimov",
+        "username": "asadbek",
+        "tel": "+998881628456",
+        "courseId": 1643842421476,
+        "teacherId": 1643842536511,
+        "groupId": 1643842437024,
+        "password": "salimov",
+        "role": "student"
+    },
+    {
         "id": 1643850971487,
         "name": "Salimov Baxodir",
         "username": "baxa12",
