@@ -31,6 +31,7 @@ async function checkUser(req, res){
          res.redirect('/login') 
       }
     }else{
+      try{
         if(found.role == 'student'){
             req.id = found.id;
             res.redirect('/student');
@@ -43,6 +44,9 @@ async function checkUser(req, res){
         }else{
             res.redirect('/login')
         }
+      }catch{
+          res.redirect('/login')
+      }
          
     }
   
